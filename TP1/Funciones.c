@@ -1,6 +1,6 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 
 int getInt(char mensaje[])
@@ -22,37 +22,37 @@ char getChar(char mensaje[])
     return xChar;
 }
 
-int getint(char mensaje[])
+float getFloat(char mensaje[])
 {
-    int xInt;
+    float xFloat;
     printf("%s", mensaje);
-    scanf("%d", &xInt);
+    scanf("%f", &xFloat);
 
-    return xInt;
+    return xFloat;
 }
 
 
-int funcionSuma(int numeroUno, int numeroDos)
+float funcionSuma(float numeroUno, float numeroDos)
 {
-    int suma;
+    float suma;
     suma= numeroUno+numeroDos;
     return suma;
 }
 
-int funcionResta(int numeroUno, int numeroDos)
+float funcionResta(float numeroUno, float numeroDos)
 {
-    int resta;
+    float resta;
     resta= numeroUno-numeroDos;
     return resta;
 }
 
-float funcionDividir((float) numeroUno, int numeroDos)
+float funcionDividir(float numeroUno, float numeroDos)
 {
     float dividir;
 
     if(numeroDos==0)
     {
-        printf("AVISO. No se puede dividir por 0 \n");
+        printf("ERROR. No se puede dividir por 0 \n");
     }
     else
     {
@@ -62,18 +62,17 @@ float funcionDividir((float) numeroUno, int numeroDos)
     return dividir;
 }
 
-int funcionMultiplicar(int numeroUno, int numeroDos)
+float funcionMultiplicar(float numeroUno, float numeroDos)
 {
-    int multiplicar;
+    float multiplicar;
     multiplicar= numeroUno*numeroDos;
     return multiplicar;
 }
 
 
-
-int funcionFactorial(int numero)
+float funcionFactorial(float numero)
 {
-    int factorial;
+    float factorial;
 
     if (numero==0)
     {
